@@ -16,7 +16,7 @@ def speak(text):
     #engine.say("how can i help you")
     engine.runAndWait()
 r=sr.Recognizer()
-speak("Hi sadhu, how are you` ?")
+speak("Hi , how are you` ?")
 with sr.Microphone() as source:
     r.energy_threshold=10000
     r.adjust_for_ambient_noise(source,1.2)
@@ -27,4 +27,6 @@ with sr.Microphone() as source:
 
 if "what" and "about "and "you"in text:
     speak("I am also fine")
+else:
+    speak("love you ")
 speak("what can i do for you??")
